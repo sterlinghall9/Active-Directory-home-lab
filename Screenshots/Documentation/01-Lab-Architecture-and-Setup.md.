@@ -1,0 +1,77 @@
+# Active Directory Home Lab — Architecture and Setup
+
+## 1. Project Overview
+
+This project simulates a small business IT environment using Windows Server 2022, Windows 11, and Oracle VirtualBox.
+
+The purpose of the lab is to gain hands-on experience with Active Directory administration, DNS configuration, domain management, Group Policy, and Help Desk support operations.
+
+## 2. Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Virtualization Platform | Oracle VirtualBox |
+| Domain Controller | Windows Server 2022 |
+| Client Workstation | Windows 11 |
+| Domain Name | ad.sterlingtech.test |
+| NetBIOS Domain | STERLINGTECH |
+| Domain Controller | DC01 |
+| Client Computer | CLIENT01 |
+| Virtual Network | Internal Network: AD-LAB |
+
+## 3. Network Configuration
+
+| Device | IP Address | Subnet Mask |
+|---|---|---|
+| DC01 | 192.168.10.10 | 255.255.255.0 |
+| CLIENT01 | 192.168.10.20 | 255.255.255.0 |
+
+**DNS Configuration:** CLIENT01 uses DC01 (192.168.10.10) as its preferred DNS server.
+
+**Network Design:** Both virtual machines use the same VirtualBox Internal Network named AD-LAB to communicate in an isolated lab environment.
+
+## 4. Active Directory Configuration
+
+Configured Active Directory Domain Services (AD DS) and promoted DC01 to a domain controller for a new forest.
+
+Created the domain:
+
+- ad.sterlingtech.test
+- NetBIOS name: STERLINGTECH
+
+Configured DNS to support domain name resolution and Active Directory services.
+
+## 5. Organizational Units
+
+Created the following organizational units to organize domain accounts:
+
+- IT
+- Human Resources
+- Finance
+- Operations
+
+## 6. Project Objectives
+
+- Deploy and configure a Windows Server domain controller.
+- Configure DNS and network connectivity.
+- Join a Windows 11 workstation to the domain.
+- Create and manage domain users and security groups.
+- Configure and test Group Policy Objects.
+- Perform Help Desk account management and troubleshooting.
+- Practice employee account offboarding.
+
+## 7. Tools and Technologies
+
+- Windows Server 2022
+- Windows 11
+- Active Directory Domain Services
+- DNS
+- Group Policy Management
+- Active Directory Users and Computers
+- Windows PowerShell
+- Event Viewer
+- Oracle VirtualBox
+
+## 8. Project Status
+
+The lab environment has been deployed and configured. Additional documentation covers Active Directory administration, Group Policy, Help Desk troubleshooting, and employee offboarding.
