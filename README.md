@@ -116,3 +116,4 @@ Get-ADUser camille.hall -Properties LockedOut
 Successfully built and administered a simulated business domain environment with a Windows Server 2022 domain controller and a Windows 11 domain-joined workstation. Practiced common IT Support and Help Desk responsibilities through hands-on user administration, access control, Group Policy, and troubleshooting exercises.
 
 **Author:** Sterling Hall
+
