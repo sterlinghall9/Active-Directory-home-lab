@@ -1,0 +1,96 @@
+# Active Directory Administration
+
+## 1. Overview
+
+This section documents the Active Directory administration tasks performed in the Windows Server 2022 home lab.
+
+The objective was to simulate common IT administrator responsibilities, including organizational unit management, user account creation, security group administration, and account maintenance.
+
+## 2. Organizational Unit Management
+
+Created the following Organizational Units (OUs) in the `ad.sterlingtech.test` domain:
+
+- IT
+- Human Resources
+- Finance
+- Operations
+
+Organizational Units provide a structured way to organize users and computers and allow administrators to apply policies to specific departments.
+
+## 3. User Account Management
+
+Created multiple domain user accounts within the IT Organizational Unit.
+
+Practiced the following account management tasks:
+
+- Creating domain user accounts.
+- Configuring user logon names.
+- Reviewing account properties.
+- Resetting user passwords.
+- Disabling and re-enabling user accounts.
+- Verifying account status.
+
+## 4. Security Group Management
+
+Created a Global Security Group named:
+
+`IT-Support`
+
+Used the group to practice centralized permission and membership management.
+
+Tasks performed:
+
+- Created the IT-Support security group.
+- Added domain users to the group.
+- Reviewed group membership using PowerShell.
+- Practiced removing users from the group.
+
+## 5. PowerShell Administration
+
+Used the Active Directory PowerShell module to inspect and manage domain accounts and security groups.
+
+Example commands:
+
+**Retrieve a domain user:**
+
+```powershell
+Get-ADUser -Identity daniel.ford
+```
+
+**Check whether an account is enabled:**
+
+```powershell
+Get-ADUser -Identity camille.hall -Properties Enabled | Select-Object Name, Enabled
+```
+
+**View security group membership:**
+
+```powershell
+Get-ADGroupMember "IT-Support"
+```
+
+**Disable a user account:**
+
+```powershell
+Disable-ADAccount -Identity camille.hall
+```
+
+**Enable a user account:**
+
+```powershell
+Enable-ADAccount -Identity camille.hall
+```
+
+## 6. Skills Demonstrated
+
+- Active Directory Domain Services administration.
+- Organizational Unit management.
+- Domain user account provisioning.
+- Password and account management.
+- Security group administration.
+- PowerShell command-line administration.
+- Basic identity and access management.
+
+## 7. Practical IT Support Applications
+
+These tasks simulate common responsibilities performed by Help Desk and Desktop Support technicians, including onboarding employees, modifying account access, troubleshooting account issues, and assisting with user access requests.
