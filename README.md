@@ -1,6 +1,5 @@
 # Active-Directory-home-lab
 Hands-on Windows Server 2022 Active Directory home lab demonstrating domain administration, DNS configuration, user management, Group Policy, and Windows workstation integration
-# Active Directory Home Lab
 
 ## Project Overview
 
